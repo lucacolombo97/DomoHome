@@ -1,0 +1,219 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:fillViewport="true">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="10dp"
+            android:textSize="35sp"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text="@string/comandi"
+            android:id="@+id/textView2"
+            android:textColor="@color/comandi"/>
+
+        <Switch
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="20dp"
+            android:textSize="25sp"
+            android:id="@+id/switchAllarme"
+            android:checked="false"
+            android:text="@string/allarme" />
+
+
+        <Switch
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:textSize="25sp"
+            android:id="@+id/switchCancello"
+            android:checked="false"
+            android:text="@string/servo_cancello"
+            android:layout_marginTop="20dp" />
+
+        <Switch
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:textSize="25sp"
+            android:id="@+id/switchBox"
+            android:checked="false"
+            android:text="@string/servo_box"
+            android:layout_marginTop="20dp" />
+
+        <Switch
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="20dp"
+            android:textSize="25sp"
+            android:id="@+id/switchLedSala"
+            android:checked="false"
+            android:text="@string/led_sala" />
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginStart="10dp"
+                android:textSize="25sp"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:text="@string/rgb"
+                android:id="@+id/textViewRGB"
+                android:layout_marginTop="20dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="25sp"
+                android:textAlignment="center"
+                android:hint="@string/setRGB"
+                android:id="@+id/textViewSetRGB"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentEnd="true"
+                android:layout_marginRight="10dp"
+                android:layout_marginEnd="10dp"
+                android:layout_alignTop="@+id/textViewRGB" />
+
+        </RelativeLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="50dp"
+            android:textSize="35sp"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text="@string/temp"
+            android:id="@+id/textView3"
+            android:textColor="@color/comandi" />
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginStart="10dp"
+                android:textSize="25sp"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:text="@string/getTemp"
+                android:id="@+id/textViewTemp"
+                android:layout_marginTop="20dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="25sp"
+                android:hint="@string/getNumTemp"
+                android:id="@+id/textViewTempAttuale"
+                android:layout_alignTop="@+id/textViewTemp"
+                android:layout_toLeftOf="@+id/textView5"
+                android:layout_toStartOf="@+id/textView5"
+                android:layout_marginRight="5dp"
+                android:layout_marginEnd="5dp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="25sp"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:text="@string/gradi"
+                android:id="@+id/textView5"
+                android:layout_alignBottom="@+id/textViewTempAttuale"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentEnd="true"
+                android:layout_marginRight="5dp"
+                android:layout_marginEnd="5dp"/>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="25dp"
+            android:layout_marginBottom="40dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="25sp"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:text="@string/onTemp"
+                android:id="@+id/textView7"
+                android:layout_marginLeft="10dp"
+                android:layout_marginStart="10dp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="25sp"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:text="@string/setTemp"
+                android:id="@+id/textView4"
+                android:layout_below="@+id/textView7"
+                android:layout_marginTop="25dp"
+                android:layout_alignLeft="@+id/textView7"
+                android:layout_alignStart="@+id/textView7" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="25sp"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:text="@string/gradi"
+                android:id="@+id/textView6"
+                android:layout_alignBottom="@+id/textView4"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentEnd="true"
+                android:layout_marginRight="5dp"
+                android:layout_marginEnd="5dp" />
+
+            <Switch
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/switchSetTemperatura"
+                android:layout_above="@+id/textView4"
+                android:layout_alignRight="@+id/textView6"
+                android:layout_alignEnd="@+id/textView6" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="25sp"
+                android:id="@+id/textViewSetTemp"
+                android:hint="@string/setNumTemp"
+                android:layout_alignTop="@+id/textView4"
+                android:layout_toLeftOf="@+id/textView6"
+                android:layout_toStartOf="@+id/textView6"
+                android:layout_marginRight="5dp"
+                android:layout_marginEnd="5dp" />
+
+        </RelativeLayout>
+
+    </LinearLayout>
+</ScrollView>
+
+

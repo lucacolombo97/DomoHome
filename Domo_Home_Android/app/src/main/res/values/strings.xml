@@ -1,0 +1,22 @@
+<resources>
+    <string name="app_name">Domo Home</string>
+    <string name="login">Login</string>
+    <string name="user">Username</string>
+    <string name="psw">Password</string>
+    <string name="led_sala">Luci sala:</string>
+    <string name="servo_cancello">Cancello:</string>
+    <string name="servo_box">Box:</string>
+    <string name="setTemp">Imposta temperatura:</string>
+    <string name="getTemp">Temperatura Attuale:</string>
+    <string name="comandi">Comandi</string>
+    <string name="temp">Temperatura</string>
+    <string name="setNumTemp">Set</string>
+    <string name="getNumTemp">Get</string>
+    <string name="gradi">C°</string>
+    <string name="rgb">Luci camera:</string>
+    <string name="setRGB">Scegli atmosfera</string>
+    <string name="allarme">Allarme:</string>
+    <string name="onTemp">Impianto raffreddamento:</string>
+
+
+</resources>
