@@ -5,6 +5,12 @@
 
 ![DomoHome](https://user-images.githubusercontent.com/48442855/139595711-375a10b8-3cad-4816-8ceb-cab4f910f6f6.png)
 
+**Package Division:**
+- Domo_Home_Android: it contains the code of the Android Application
+- Domo_Home_Arduino: it contains the code for the ArduinoUno and ArduinoYun boards
+- Domo_Home_DB: it contains the DB schema
+- Domo_Home_PHP: it contains the PHP code
+
 ## General Overview
 
 Home automation is a recent discipline that studies technologies to improve the quality of life inside the house and is achieved through the use of three major technical disciplines: computer science, electronics and mechanics.  
@@ -20,8 +26,8 @@ A microcontroller is a small computer built on a single integrated circuit conta
 An example of a microcontroller is the Arduino board.  
 Arduino, the "brain" of the project, is an electronic board controlled by an ATmega microcontroller and is equipped with Input/Output peripherals, thanks to which it receives the signals collected by the sensors, and after processing them interacts with the outside thanks to the actuators driven by the program loaded on it.  
 In the "Domo Home" project two Arduino boards were used: 
-1. "Arduino Uno", a standard board with basic functionality and
-2. "Arduino Yun", which in addition implements an ethernet board and a wifi sensor that allow the microcontroller to communicate with Internet.
+1. ArduinoUno, a standard board with basic functionality and
+2. ArduinoYun, which in addition implements an ethernet board and a wifi sensor that allow the microcontroller to communicate with Internet.
 
 ## Sensors and Actuators
 
@@ -52,7 +58,24 @@ Finally, the anti-intrusion system is realized through the use of three reed sen
 
 ![ArduinoYun](https://user-images.githubusercontent.com/48442855/139596261-cb38114d-8ee7-4f45-9e70-35d7be90bb29.jpg)
 
+## The Code
 
+To manage the home automation system, an Android application has been created, in native Java language, through the official Google development environment "Android Studio".  
+The communication between Arduino and the app is through the Internet and is mediated by PHP that manages the database server since Altervista does not allow the execution of queries directly from the java code.
+
+![4586695455](https://user-images.githubusercontent.com/48442855/139596634-fe2effc9-dd33-4219-8a7a-2385c6664f8c.jpg)
+
+**The functions made available to the user are:**
+- Alarm activation (with notification system in case of intrusion);
+- Gate opening/closing;
+- Garage opening/closing;
+- Room lights on;
+- Atmosphere selection (to turn on colored lights in the bedroom);
+- Detection of current temperature;
+- Cooling system on/off, with desired temperature setting.
+
+## Video Presentation
+ 
 
 
 
