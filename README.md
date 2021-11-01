@@ -31,7 +31,7 @@ In the "Domo Home" project two Arduino boards were used:
 
 ## Sensors and Actuators
 
-List of sensors and actuators.  
+Here it is the list of all sensors and actuators of DomoHome.  
 Garden:
 - A Photoresistor, a particular resistance whose value varies with the intensity of light
 - A series of white LEDs, that simulate the outdoor lighting
@@ -60,8 +60,8 @@ Finally, the anti-intrusion system is realized through the use of three reed sen
 
 ## The Code
 
-To manage the home automation system, an Android application has been created, in native Java language, through the official Google development environment "Android Studio".  
-The communication between Arduino and the app is through the Internet and is mediated by PHP that manages the database server since Altervista does not allow the execution of queries directly from the java code.
+To manage the home automation system, an Android application has been created through the official Google development environment "Android Studio".  
+The communication between Arduino and the app is provided through the Internet and it is mediated by PHP that manages the database server since the Altervista DB service does not allow the execution of queries directly from the java code.
 
 ![4586695455](https://user-images.githubusercontent.com/48442855/139596634-fe2effc9-dd33-4219-8a7a-2385c6664f8c.jpg)
 
